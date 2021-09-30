@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #c934a4;
+  --primary-color-2: #d2f318;
+}
+
+body {
+  background: #d2f318;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: var(--primary-color);
+  padding: .9em;
+  padding-left: 1.3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .logo {
+  background: white;
+  color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 13.5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--primary-color);
+  outline: 5px solid var(--primary-color-2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+}
+
+.navbar .logo .bad {
+  font-weight: bold;
+}
+
+.navbar .logo .clock {
+  font-weight: lighter;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  max-height: 3em;
+  max-width: 3em;
+  margin-top: .7em;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+nav ul {
+  text-decoration: none;
+  font-size: 1.3em;
+  place-content: space-between;
+  text-align: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  margin: auto;
+}
+
+.primary-nav {
+  width: 45%;
+  margin-right: 2em;
+  margin-left: 1.5em;
+}
+
+.primary-nav li {
+  margin-right: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secondary-nav {
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  margin-left: 1.5em;
+  margin-right: 2em;
+}
+
+.secondary-nav li {
+  margin-right: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav.menu-btn {
+  display: block;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+nav.menu-btn .mobile-menu-exit {
+  margin-top: -1em;
+}
+
+nav.menu-btn li a {
+  margin: 0;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+nav {
+  position: absolute;
+  z-index: 999;
+  width: 38%;
+  right: 0;
+  top: 0;
+  background: white;
+  margin: 0;
+  -webkit-box-shadow: 90px 10px 0 0 var(--primary-color), 68px 0 0 -60px pink, 0px 60px 0 -60px tomato, -70px -98px 0 -60px var(--primary-color-2), inset 3px 0 0 3px transparent;
+          box-shadow: 90px 10px 0 0 var(--primary-color), 68px 0 0 -60px pink, 0px 60px 0 -60px tomato, -70px -98px 0 -60px var(--primary-color-2), inset 3px 0 0 3px transparent;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 90px auto;
+        grid-template-columns: 90px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=main.css.map */
